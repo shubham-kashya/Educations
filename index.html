@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+
+
+    <style>
+
+      * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0;}
+      
+.a100{float:left;width: 100%;padding:15px;}
+.a33{float:left;width: 33%;padding:10px;}
+
+    
+     
+        .sticker{width: 86%;height: 12rem;;position: relative;background-color: rgb(238, 234, 226);top: -11rem;left: 6rem;}
+        .sticker a{display: inline-block;text-decoration: none;color: rgb(35, 35, 87);padding: 2.7rem 3rem;;font-size: 4rerm;border-right: 1px solid rgb(197, 192, 192);left: 27px;position: relative;}
+        .sticker a:hover{color: rgb(76, 51, 217);transform: scale(1.10,1.10);transition: .2s;}
+       
+        .div li{list-style: none;display: inline-block;position: relative;padding: 0rem 2.5rem;left: 27px;font-size: 16px;color: rgb(38, 38, 121);font-weight: bold;}
+       .one{ background-image: url("bg.jpg" ); width: 100%; height:55rem;; background-size:100% 55rem;position: relative;opacity: .80;top: -12rem;;}
+       .a33{position: relative;top: -65rem;left:1rem;;width: 10rem;;margin: 28px;height: 50rem;;}
+       .a33 img:hover{transform: scale(1.10 );transition: 1s;}
+       .head{position: relative;color: rgb(109, 107, 107);font-style: italic;font-size: 1.5rem;margin-left: 15px;}
+       .heading{color:rgb(77, 0, 177) ;font-size: 22px;font-weight: 500;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;margin-left: 20px;margin-top: 10px;}
+       .summary{font-size: 20px;padding:40px;}
+       .story{background-color: white;width: 7rem;height: 2.5rem;;font-weight:bold;color: rgb(97, 100, 102);text-align: center;margin-left: 35px;margin-top: -10px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+       #arrow{color: rgb(254, 255, 255);background-color:rgb(62, 0, 143)  ;position: relative;top: -1.2rem;left: 7rem;;width: 2rem;height: 2.5rem;;font-size: 1.4rem;}
+       #arrow a{text-decoration: none;color: antiquewhite;position: relative;top: 8px;}
+
+
+
+
+       
+
+.section1 .dropdown{position: relative; display:inline-block;z-index: 2;top: 4rem}
+.section1 .dropbutton{padding: 5px; font-size:17px;font:bold;color:#58339f; font-family:verdana;font-weight: bold;position: relative;left: 5rem;top: -3.2rem;;}
+.section1 .dropbutton:hover{color:#d2d459 ;position: relative;transition: 1s;cursor: pointer;;}
+.section1 .dropcontent {position: absolute; background-color:#ffffff;width: 20rem;height: auto;top: 0rem;left:1rem;border-top: 2px solid rgb(113, 17, 204); box-shadow: 5px 4px 5px 4px rgb(164, 167, 168);transition: 2s;}
+.section1 a{color: #212024; display:block; font-size: 10px; text-decoration: none;padding: 10px; font-size: 14px;}
+.section1 a:hover {background-color:#3d2c2c;color: #e7d84e;opacity: .50;}
+.section1 .dropcontent{display: none; }
+.section1  .dropdown:hover .dropcontent{display: block;}
+.hr{ background-color: rgb(252, 252, 252); ;height: .1px;}
+.bi-chevron-down:hover{color: rgb(22, 22, 14);transform: rotate(-90deg);}
+
+
+
+
+
+
+
+.abc{width: 60px ;height: 60px;padding: 14px 0px 0px 17px; background-color:#401077;color: rgb(255, 243, 243); border: 4px solid rgb(234, 232, 226);position: relative;top: -9.5rem;;border-radius: 50%;float: right;right: 4rem;}
+    .abc:hover{border-color:rgb(174, 171, 171);transition: .5s;}
+    .xyz{width: 100%; height: 200px; padding: 10px; background-color :white;color: white;display: none;text-align: center; margin: 1%;}
+    
+   #innersearch{position: relative;border: 1px solid rgb(220, 212, 212);padding: 5px;width: 42px;height: 64px;left:45.8rem;top: 6.5rem;background-color: black;border: none;}
+   #innersearch:hover{background-color: rgb(169, 158, 158);color: rgb(29, 27, 27);transition: 1s;}
+
+
+#search{color: white;background-color: rgb(59, 55, 55);border: none;}
+#searchbar{width: 45rem;height: 4rem;position: relative;left: -2rem;top: 5rem;background-color: rgb(250, 249, 248);color: black;font-size: 25px;}
+
+
+
+
+
+
+    .pqr{width: 14%;height: 100%; background-color: rgb(49, 22, 22);color:#401077;padding: 10px;display: none;text-align: center;position: relative;top:0rem;float: left;;}
+    #link a{text-decoration: none;display:inline-block;font-size: 17px;color: white;padding: 10px;}
+    #link a:hover{color: rgb(251, 255, 0);border-bottom: .5px solid rgb(94, 94, 90);;}
+     #twitter:hover{color: #0583cc;transform:scale(1.25);}
+  #link  .image:hover{color:#401077}
+
+    .zyx{width: 9%;height: 70px;background-color:rgb(168, 159, 114); color: rgb(19, 18, 18);text-align: center;display: block; float: right;position: relative;right: -3rem;top: -4.5rem;font-size: 1.2rem;border-radius: 10px 5px 100px 10px}
+    .zyx:hover{color: rgb(209, 208, 217);background-color :rgb(70, 29, 203);font-size: 1.3rem;transition: 1s;}
+ 
+
+
+
+
+
+    .data{width: 100%;height: 10rem; background-color:#401077;margin-top: -9rem;}
+    .tag{font-size: 13rem;color: white;position: relative;left: 4rem;top: -2rem;font-family: 'Courier New', Courier, monospace;font-weight: 700;}
+    .tag:hover{color: rgb(146, 146, 118);transition: 1s;}
+    .data h2{position: relative;font-size: 3rem;top: -22.5rem;color: white;left: -6rem;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    .data h2:hover{color: rgb(138, 205, 205);font-size:3.1rem;}
+    .link a{text-decoration: none;font-size: 1.6rem;position: relative;left: 25rem;top: -23.4rem;color: white;padding: 7px}
+    .link a:hover{color: rgb(186, 186, 117);border-bottom: 1px solid rgb(158, 143, 143);transition: .5s;}
+   
+    
+.a33{float:left;width: 100%;padding:10px;}
+.a100{float: left;width: 100%;padding: auto;}
+      
+        h2{color:   white;font-family: cursive;text-align: center;top: -18rem;position: relative;}
+    
+        .first{background-color: #401077; color: white;text-align: center;position: relative;top: 4rem;width: 10rem; height: 2.5rem;padding: 10px 20px;text-align: center;right: 22rem;font-weight: 700;}
+       .final{ background-image: url("bg.jpg" ); width: 85rem; height:40rem ;; background-size:85rem 40rem;position: relative;;top: -27rem;right: 57rem;}
+       .background{width: 85rem; height: 40rem;;background-color: #401077;opacity: .60;}
+       .bi-facebook:hover{background-color: #e5e2ec;color:rgb(6, 50, 196);transition: 1s;}
+       .bi-twitter:hover{background-color: #e5e2ec;color:rgb(6, 104, 196);transition: 1s}
+       .bi-instagram:hover{background-color: #e5e2ec;color:rgb(227, 6, 43);transition: 1s}
+       .bi-youtube:hover{background-color: #e5e2ec;color:rgb(223, 41, 9);transition: 1s}
+       .bi-linkedin:hover{background-color: #e5e2ec;color:rgb(31, 34, 190);transition: 1s}
+       .bi-pinterest:hover{background-color: #e5e2ec;color:rgb(218, 31, 7);transition: 1s}
+       .lc a{text-decoration: none;position: relative;top:-24rem;left: 8rem;;color: white;font-size: 20px;padding: 10px;}
+       .lc a:hover{color: rgb(134, 92, 37);}
+       #end{position: relative;top: -22rem;color: white;left: 27rem;padding: 10px;font-size: 1.2rem;;}
+
+    
+
+
+
+
+       
+@media screen  and (max-width:600px)
+{
+  
+    
+  .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+      
+        .slideshow-container {
+          max-width: 100%;
+            left:2rem;
+          position: relative;
+          margin: auto;top: 1rem;;
+    
+          background: none;    }
+        
+        
+      .next {
+          cursor: pointer;
+         position: relative;
+         top: -10rem;;
+        color: yellow;
+         font-size: 1rem;;
+         left: 1rem;;
+         font-style: italic;
+         border-radius: 2rem;;
+
+        
+        }
+      
+
+        
+      
+        .utext {
+          color: rgb(240, 233, 233);
+          font-size: 10px;
+     top: -7rem;
+     left: 12rem;;
+          position: relative;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          text-align: center;
+        }
+
+        .utext:hover{color: rgb(207, 26, 26);transition: ease-in;transition: 1s;}
+        
+       
+        .uptext  h1{
+         position: relative;
+         top: 18rem;;
+         left: 5rem;
+     
+        
+         color: white;
+       font-size: 1.58rem;;
+        }
+      
+
+        h1{font-size: 1rem;padding: 5px; font-weight: bold;}
+         
+        .uptext  h2{
+         position: relative;
+         top: 15rem;;
+         left: 5rem;
+     
+        
+         color: white;
+       font-size: 3.3rem;;
+        }
+     
+
+        h2{font-size: 1rem;padding: 5px; font-weight: bold;}
+        #tag{color: rgb(50, 66, 66);
+        font-weight: bold;
+        position: relative;
+top: 18rem;;   left: 8rem;font-size: .5rem;background-color: rgb(185, 185, 97);     
+        padding: auto;
+        width: 100%;
+        }
+        .down{width: 14rem;height: 1.5rem;background-color: rgb(188, 202, 127);position: relative;top: 16rem;left: 5.7rem;border-radius: 0px 0px 20px 0px;}
+
+
+       
+       
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: .5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .2} 
+          to {opacity: 1}
+        }
+        
+       
+        
+        .sticker{width: 100%;height: 7rem;;position: relative;background-color: rgb(238, 234, 226);top: -11rem;left: 6rem;}
+        .sticker a{display: block;text-decoration: none;color: rgb(35, 35, 87);padding: 2.7rem 3rem;;font-size: 1rem;border-right: 1px solid rgb(197, 192, 192);left: 27px;position: relative;}
+        .sticker a:hover{color: rgb(76, 51, 217);transform: scale(1.10,1.10);transition: .2s;}
+       
+        .div li{list-style: none;display: block;position: relative;padding: 0rem 2.5rem;left: 27px;font-size: 10px;color: rgb(38, 38, 121);font-weight: bold;}
+       .one{ background-image: url("bg.jpg" ); width: 100%; height:55rem;; background-size:100% 30rem;position: relative;opacity: .80;top: -12rem;;}
+       .a33{position: relative;top: -65rem;left:1rem;;width: 100%;;margin: 28px;height: 10rem;;}
+       .a33 img:hover{transform: scale(1.10 );transition: 1s;}
+       .head{position: relative;color: rgb(109, 107, 107);font-style: italic;font-size: .5rem;margin-left: 15px;}
+       .heading{color:rgb(77, 0, 177) ;font-size: 7px;font-weight: 500;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;margin-left: 20px;margin-top: 10px;}
+       .summary{font-size: 20px;padding:40px;}
+       .story{background-color: white;width: 100%;height: 1.5rem;;font-weight:bold;color: rgb(97, 100, 102);text-align: center;margin-left: 35px;margin-top: -10px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+       #arrow{color: rgb(254, 255, 255);background-color:rgb(62, 0, 143)  ;position: relative;top: -1.2rem;left: 7rem;;width: 100%;height: 2.5rem;;font-size: .7rem;}
+       #arrow a{text-decoration: none;color: antiquewhite;position: relative;top: 8px;}
+
+
+
+
+       .a50{float: left;width: 100%;padding:15px;}
+
+.section1 .dropdown{position: relative; display:block;z-index: 2;top: 4rem}
+.section1 .dropbutton{padding: 5px; font-size:10px;font:bold;color:#58339f; font-family:verdana;font-weight: bold;position: relative;left: 5rem;top: -3.2rem;;}
+.section1 .dropbutton:hover{color:#d2d459 ;position: relative;transition: 1s;cursor: pointer;;}
+.section1 .dropcontent {position: absolute; background-color:#ffffff;width: 7rem;height: auto;top: 0rem;left:1rem;border-top: 2px solid rgb(113, 17, 204); box-shadow: 5px 4px 5px 4px rgb(164, 167, 168);transition: 2s;}
+.section1 a{color: #212024; display:block; font-size: 5px; text-decoration: none;padding: 10px; font-size: 8px;}
+.section1 a:hover {background-color:#3d2c2c;color: #e7d84e;opacity: .50;}
+.section1 .dropcontent{display: none; }
+.section1  .dropdown:hover .dropcontent{display: block;}
+.hr{ background-color: rgb(252, 252, 252); ;height: auto;}
+.bi-chevron-down:hover{color: rgb(22, 22, 14);transform: rotate(-90deg);}
+
+
+
+
+.a100{float:left;width: 100%;padding:15px;}
+.a75{float: left;width: 75%;padding:15px;}
+.a50{float: left;width: 50%;padding:15px;}
+.a33{float: left;width: 33%;padding:15px;}
+
+
+.abc{width: 40px ;height: 40px;padding: 14px 0px 0px 17px; background-color:#401077;color: rgb(255, 243, 243); border: 4px solid rgb(234, 232, 226);position: relative;top: -9.5rem;;border-radius: 50%;float: right;right: 4rem;}
+    .abc:hover{border-color:rgb(174, 171, 171);transition: .5s;}
+    .xyz{width: 100%; height: 100px; padding: 10px; background-color :white;color: white;display: none;text-align: center; margin: 1%;}
+    
+   #innersearch{position: relative;border: 1px solid rgb(220, 212, 212);padding: 5px;width: 22px;height: 44px;left:45.8rem;top: 6.5rem;background-color: black;border: none;}
+   #innersearch:hover{background-color: rgb(169, 158, 158);color: rgb(29, 27, 27);transition: 1s;}
+
+
+#search{color: white;background-color: rgb(59, 55, 55);border: none;}
+#searchbar{width: 25rem;height: 1rem;position: relative;left: -2rem;top: 5rem;background-color: rgb(250, 249, 248);color: black;font-size: 15px;}
+
+
+
+
+
+
+    .pqr{width: 14%;height: 100%; background-color: rgb(49, 22, 22);color:#401077;padding: 10px;display: none;text-align: center;position: relative;top:0rem;float: left;;}
+    #link a{text-decoration: none;display:inline-block;font-size: 17px;color: white;padding: 10px;}
+    #link a:hover{color: rgb(251, 255, 0);border-bottom: .5px solid rgb(94, 94, 90);;}
+     #twitter:hover{color: #0583cc;transform:scale(1.25);}
+  #link  .image:hover{color:#401077}
+
+    .zyx{width: 100%;height: 40px;background-color:rgb(168, 159, 114); color: rgb(19, 18, 18);text-align: center;display: block; float: right;position: relative;right: -3rem;top: -4.5rem;font-size: .5rem;border-radius: 10px 5px 100px 10px}
+    .zyx:hover{color: rgb(209, 208, 217);background-color :rgb(70, 29, 203);font-size: 1.3rem;transition: 1s;}
+ 
+
+
+
+
+
+    .data{width: 100%;height: 5rem; background-color:#401077;margin-top: -9rem;}
+    .tag{font-size: 13rem;color: white;position: relative;left: 4rem;top: -2rem;font-family: 'Courier New', Courier, monospace;font-weight: 700;}
+    .tag:hover{color: rgb(146, 146, 118);transition: 1s;}
+    .data h2{position: relative;font-size: 1rem;top: -22.5rem;color: white;left: -6rem;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    .data h2:hover{color: rgb(138, 205, 205);font-size:1.1rem;}
+    .link a{text-decoration: none;font-size: .6rem;position: relative;left: 25rem;top: -23.4rem;color: white;padding: 7px}
+    .link a:hover{color: rgb(186, 186, 117);border-bottom: 1px solid rgb(158, 143, 143);transition: .5s;}
+   
+    
+.a33{float:left;width: 100%;padding:10px;}
+.a100{float: left;width: 100%;padding: auto;}
+      
+        h2{color:   white;font-family: cursive;text-align: center;top: -18rem;position: relative;}
+    
+        .first{background-color: #401077; color: white;text-align: center;position: relative;top: 4rem;width: 5rem; height: 1.5rem;padding: 10px 20px;text-align: center;right: 22rem;font-weight: 700;}
+       .final{ background-image: url("bg.jpg" ); width: 45rem; height:30rem ;; background-size:45rem 30rem;position: relative;;top: -27rem;right: 57rem;}
+       .background{width: 85rem; height: 40rem;;background-color: #401077;opacity: .60;}
+       .bi-facebook:hover{background-color: #e5e2ec;color:rgb(6, 50, 196);transition: 1s;}
+       .bi-twitter:hover{background-color: #e5e2ec;color:rgb(6, 104, 196);transition: 1s}
+       .bi-instagram:hover{background-color: #e5e2ec;color:rgb(227, 6, 43);transition: 1s}
+       .bi-youtube:hover{background-color: #e5e2ec;color:rgb(223, 41, 9);transition: 1s}
+       .bi-linkedin:hover{background-color: #e5e2ec;color:rgb(31, 34, 190);transition: 1s}
+       .bi-pinterest:hover{background-color: #e5e2ec;color:rgb(218, 31, 7);transition: 1s}
+       .lc a{text-decoration: none;position: relative;top:-24rem;left: 8rem;;color: white;font-size: 10px;padding: 10px;}
+       .lc a:hover{color: rgb(134, 92, 37);}
+       #end{position: relative;top: -22rem;color: white;left: 27rem;padding: 10px;font-size: .5rem;;}
+} 
+  
+
+       
+
+        </style>
+ 
+</head> 
+<body  style="background-color: rgb(236, 231, 226);">
+ 
+<div class="xyz" id="search">
+    <label><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-search"
+        viewBox="0 0 16 16" id="innersearch">
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+      </svg>
+      <input type="search" id="searchbar" placeholder="Search"></label>
+  </div>
+
+
+
+
+
+
+
+
+<div class="data">
+
+  <h1 class="tag">E</h1>
+  <h2>University of Education</h2>
+  <div class="link">
+      <a href="">Students  /</a>
+    <a href="">Parents  /</a>
+    <a href="">Faculity & Staff  /</a>
+    <a href="">Alumni  </a></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="abc" id="btn3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="white"
+      class="bi bi-search" viewBox="0 0 16 16">
+      <path
+        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+    </svg></div>
+
+
+
+
+
+  <div class="pqr">
+    <div id="link">
+      <a href="" style="color: yellow;"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16" >
+        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+        </svg>   MyUE</a>
+
+
+
+
+
+      <a href="">
+         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-calendar-date-fill" viewBox="0 0 16 16" id="twitter">
+          <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2"/>
+          <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a13 13 0 0 1 1.313-.805h.632z"/>
+        </svg>    Calendar</a>
+      <a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16" id="twitter">
+        <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+        <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+        </svg> Directories</a>
+    
+
+
+      <a href="">
+ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-medical" viewBox="0 0 16 16" id="twitter" >
+  <path d="M8.5 4.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L7 6l-.549.317a.5.5 0 1 0 .5.866l.549-.317V7.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L9 6l.549-.317a.5.5 0 1 0-.5-.866l-.549.317zM5.5 9a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
+</svg>
+    UE Medicine</a>
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16"  id="twitter">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        </svg>      Maps</a>
+      <a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16"  id="twitter">
+        <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
+        <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
+        </svg>  UE News</a>
+        <br><br>
+        <h3 style="color: white;font-weight: bold;">HelpfulLinks</h3>
+
+
+
+        <hr style="width: 7rem;height: 3px;;position: relative;left: 0rem;color: rgb(207, 219, 238);">
+
+
+        <a href="">Computing/IT</a>
+        <a href="">Workday HCM</a>
+        <a href="">Husky Card</a>
+        <a href="">UE Bothell</a>
+        <a href="">UE Tacoma</a>
+        <hr style="width: 7rem;height: 3px;;position: relative;left: 0rem;color: rgb(207, 219, 238);">
+
+<br><br>
+<a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" class="fb">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+  </svg> UE Facebook</a>
+<a href=""> 
+   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" id="twitter" viewBox="0 0 16 16">
+    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+  </svg>    UE Twitter</a>
+
+        
+    </div>
+  
+    
+
+  </div>
+  <button class="zyx" id="btn5" style=" cursor: pointer;">Quick link <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+    </svg></button>
+
+  
+
+
+
+  <div class="row section1">
+ 
+      <div class="dropdown"><div class="dropbutton">ABOUT  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+      </svg>/</div><div class="dropcontent">
+       <div class="a50">
+        <a href="">About the UE </a>
+       <div class="hr"></div>
+        <a href="">Diversity</a><div class="hr"></div>
+        <a href="">Global Impact</a><div class="hr"></div>
+        <a href="">Innovation</a><div class="hr"></div>
+        <a href="">Leadership</a><div class="hr"></div>
+        <a href="">Maps</a><div class="hr"></div>
+        <a href="">Population Health</a><div class="hr"></div>
+        <a href="">Sustainability</a>
+        </div>
+
+
+
+       <div class="a50"><a href="">Visit   /</a> </div>
+        </div></div>
+
+
+
+
+
+
+
+
+      <div class="dropdown"><div class="dropbutton">ACADEMICS  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+      </svg>/</div>
+      <div class="dropcontent">
+        <a href="">Academic calendarinteriorse</a><div class="hr"></div>
+
+        <a href="">Academic departments</a><div class="hr"></div>
+        <a href="">Colleges and schools</a><div class="hr"></div>
+        <a href="">Course descriptions</a><div class="hr"></div>
+        <a href="">Registration</a><div class="hr"></div>
+        <a href="">Student guide</a><div class="hr"></div>
+        <a href="">Time schedule</a>
+      
+        </div>
+      </div>
+
+      <div class="dropdown"> <div class="dropbutton">APPLY   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+      </svg>/</div>
+   <div class="dropcontent">
+      
+         <a href="">Admissions</a> <div class="hr"></div>    <a href=""  style="float: right;position: relative;top: -3rem;">UE Online</a>
+         <a href="">Financial Aid</a><div class="hr"></div>
+         <a href="">Continuing education</a><div class="hr"></div>
+         <a href="">Majors</a><div class="hr"></div>
+         <a href="">Student housing</a><div class="hr"></div>
+         <a href="">Transfer students</a><div class="hr"></div>
+         <a href="">Tuition and fees</a><div class="hr"></div>
+         <a href="">Undocumented <br>students</a>
+      
+        </div>
+
+
+
+
+    </div>
+      <div class="dropdown"> <div class="dropbutton">NEWS & EVENTS  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+      </svg>/</div>
+
+ <div class="dropcontent">
+      
+         <a href="">UE News</a>   <div class="hr"></div>
+         <a href="">Featured stories</a>   <div class="hr"></div>
+         <a href="">Arts UE</a>   <div class="hr"></div>
+         <a href="">Calendar</a>   <div class="hr"></div>
+         <a href="">UE Magazine</a>  <div class="hr"></div> 
+         <a href="">Husky sports</a>   <div class="hr"></div>
+         <a href="">Newsletter</a>   
+         
+      
+        </div>
+
+
+
+
+
+    </div>
+      <div class="dropdown"> <div class="dropbutton">RESEARCH<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+      </svg>/</div>
+       <div class="dropcontent">
+      
+         <a href="">Office of Research</a>   <div class="hr"></div>
+         <a href="">Research Lifecycle</a>   <div class="hr"></div>
+         <a href="">Resources</a>   <div class="hr"></div>
+         <a href="">Centers and Institutes</a> <div class="hr"></div>  
+         <a href="">Stats and rankings</a> <div class="hr"></div>  
+        
+      
+        </div>
+
+
+
+
+    </div>
+      <div class="dropdown"> <div class="dropbutton">CAMPUSES  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+      </svg>/</div>
+
+
+  <div class="dropcontent">
+      
+        <a href="">Bothell</a> <div class="hr"></div>
+        <a href="">Seattle</a> <div class="hr"></div>
+        <a href="">Tacoma</a> 
+        </div>
+
+    </div>
+
+
+
+
+      <div class="dropdown"> <div class="dropbutton">GIVE       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+      </svg> /</div>
+
+
+  <div class="dropcontent">
+      
+        <a href="">Give now</a> <div class="hr"></div>
+        <a href="">Ways to give</a> <div class="hr"></div>
+        <a href="">My UE Giving</a> 
+       
+      
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+  
+    </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+
+
+      </div>
+      <img src="1.jpg " alt="" style="width: 100%; height: 40em; " class="image"/> 
+     >
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="2.jpg " alt="" style="width: 100%; height: 40rem;" class="image"/> 
+   
+    </div>
+    
+    <div class="mySlides fade">
+   
+      <img src="3.jpg " alt="" style="width: 100%;height: 40rem;" class="image"/> 
+     
+
+    <div class="mySlides fade">
+        
+        <img src="4.jpg " alt="" style="width: 100%;height: 40rem;" class="image"/> 
+      
+      </div>
+    
+    
+    <a class="next" onclick="plusSlides(1)"> NEXT</a><div class="arrow">></div>
+    
+    </div>
+  
+   <div class="sticker">
+    <a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+      <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+    </svg>
+    </a>
+    <a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+    </svg></a>
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+      <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+      <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+    </svg><br></a>
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16">
+  <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z"/>
+</svg> </a>
+    <a href=""> 
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
+      </svg></a>
+
+
+
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+      <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+    </svg> </a>
+
+
+
+
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-journal-medical" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v.634l.549-.317a.5.5 0 1 1 .5.866L9 6l.549.317a.5.5 0 1 1-.5.866L8.5 6.866V7.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L7 6l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V4.5A.5.5 0 0 1 8 4M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+      <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+      <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+    </svg></a>
+
+          <br>
+<div class="div">
+  <li>ARTSUE</li>
+  <li>MAPS</li>
+  <li style="position: relative;left: 50px;">MYUE</li>
+  <li style="position: relative;left: 40px;">ATHLETIC</li>
+  <li>SOCIAL</li>
+  <li style="position: relative;left: 5px;">LIBRARIES</li>
+  <li style="position:relative;float: right;top: -20px;">UE MEDCINE</li>
+
+</div>
+    
+   </div>
+    
+<div class="one"></div>
+  <div class="a33" style="background-color: rgb(218, 211, 195);width: 26.5%;">
+    <img src="c1.jpg " alt="" style="width: 21.2rem;left: -14px; height: 10rem;position: relative;top: -16px; " class="image"/> 
+    <div class="head">Research</div>
+    <div class="heading">Shallow soda lakes show <br> promise as cradles of life on <br> Earth</div><br>
+    <div class="summary">Charles Darwin proposed that life could have emerged in a “warm little pond” with the right cocktail of chemicals and energy. A study from the University of Education reports that a shallow “soda lake” in western Canada shows promise for matching those requirements.</div>
+    <div class="story">READ STORY <div id="arrow"><a href="">></a></div></div>
+
+    
+  </div>
+
+  <div class="a33" style="background-color:  rgb(211, 205, 188);width: 28%;">
+    <img src="c2.jpg " alt="" style="width: 22.3rem;left: -12px; height: 10rem;position: relative;top: -16px; " class="image"/> 
+    <div class="head">ENVIRONMENT</div>
+    <div class="heading">El Niño shows us the true face of  <br>climate change</div><br>
+    <div class="summary">Three researchers with the University of Education’s College of the Environment are studying different aspects of El Niño. They explain what’s happening this winter, and how it may provide a glimpse of what’s to come if climate change is not soon curtailed.</div>
+    <div class="story">READ STORY <div id="arrow"><a href="">></a></div></div>
+    
+  </div>
+
+  <div class="a33" style="background-color: rgb(214, 211, 202);width: 28%;">
+    <img src="c3.jpg " alt="" style="width: 22.2rem;left: -12px; height: 10rem;position: relative;top: -16px; " class="image"/> 
+    <div class="head">UW AND THE COMMUNITY</div>
+    <div class="heading">UW community mourns passing <br>of civic leader Nancy Evans</div><br>
+    <div class="summary">The University of Education community is mourning the passing of Nancy Bell Evans – a supporter of education, health care, and arts and culture, and someone who brought energy, grace, and passion to public and nonprofit service.</div>
+    <div class="story">READ STORY <div id="arrow"><a href="">></a></div></div> <br><br><br><br><br>
+     <div class="first">FAST FACTS</div><br><br><br><br><br><br>
+
+        <div class="utag" style="color:rgb(65, 38, 139);position: relative;left: -50rem;font-size: 1.7rem;top: -30px;font-weight:800;">Undergrad Search</div>
+            
+            <div class="bign" style="color:rgb(65, 38, 139);position: relative;left: -50rem;font-size: 3.7rem;top: -2rem;;font-weight:bolder;">7000+</div>
+            <div class="lt"  style="color:rgb(65, 38, 139);position: relative;left: -48rem;font-size: 1.7rem;font-weight:1000;top: -2rem;;">Undergradutes</div>
+            <div class="tline"  style="color:rgb(65, 38, 139);position: relative;left: -50rem;top: -2rem;font-size: 1rem;font-weight:1000;"> particpated in at lest 1 quarter of research</div>
+       
+        
+            <div class="utag" style="color:rgb(65, 38, 139);position: relative;left: -24rem;font-size: 2.2rem;top: -13rem;;font-weight:800;">Did you know</div>
+            
+            <div class="bign" style="color:rgb(65, 38, 139);position: relative;left: -24rem;font-size: 5.2rem;top: -13rem;;font-weight:bolder;">27 %</div>
+            <div class="lt"  style="color:rgb(65, 38, 139);position: relative;left: -24rem;font-size: 1.7rem;font-weight:1000;top: -14rem;;">of incoming freshmen</div>
+            <div class="tline"  style="color:rgb(65, 38, 139);position: relative;left: -25rem;top: -13rem;;font-size: 1rem;font-weight:1000;"> are the first in their familles to attend college</div>
+           
+        
+       
+            <div class="utag" style="color:rgb(65, 38, 139);position: relative;left: 2rem;font-size: 2rem;top: -28rem;;font-weight:800;">Honors and awards</div>
+            
+            <div class="bign" style="color:rgb(65, 38, 139);position: relative;left: -rem;font-size: 6rem;top: -29.5rem;;font-weight:bolder;">7 </div>
+            <div class="lt"  style="color:rgb(65, 38, 139);position: relative;left: 4rem;font-size: 1.2rem;font-weight:1000;top: -35rem;;">UE Faculity Members <br>have won The NOBEL</div>
+            <div class="tline"  style="color:rgb(65, 38, 139);position: relative;left: 2.5rem;top: -34rem;;font-size: 3.5rem;font-weight:1000;">PRIZE</div>
+
+      
+ <div class="final">
+    <div class="background"></div>
+    <div class="lt" style="color: whitesmoke;font-size: 2.5rem;;position: relative;text-align: center;top: -40rem;font-style: italic;">University OF Education</div>
+    <div class="downt" style="color: whitesmoke;font-size: 1.8rem;;position: relative;text-align: center;top: -38rem;font-weight: 700;left: 1rem;;">BE BOUNDLESS</div>
+    <hr style="width: 7rem;background-color: grey;position: relative;top: -35.5rem;;left: 1.5rem;;">
+    <div class="connect"  style="color: whitesmoke;font-size: 1.5rem;;position: relative;text-align: center;top: -34rem;font-weight: 400;left: .5rem;;">CONNECT WITH US</div>
+
+<div class="blogs">
+    <a href="" style="position: relative;top: -32rem;;text-decoration: none;color: white;left: 30rem;;padding: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" class="fb">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+      </svg></a>
+
+
+
+
+
+
+    <a href="" style="position: relative;top: -32rem;;text-decoration: none;color: white;left: 30rem;;padding: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" class="tw">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+      </svg></a>
+
+
+
+
+    <a href="" style="position: relative;top: -32rem;;text-decoration: none;color: white;left: 30rem;;padding: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" class="ins">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg>
+      </a>
+
+
+
+
+    <a href="" style="position: relative;top: -32rem;;text-decoration: none;color: white;left: 30rem;;padding: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16" class="you">
+        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+      </svg></a>
+
+
+
+
+
+    <a href="" style="position: relative;top: -32rem;;text-decoration: none;color: white;left: 30rem;;padding: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" class="link">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+      </svg></a>
+
+
+    <a href="" style="position: relative;top: -32rem;;text-decoration: none;color: white;left: 30rem;;padding: 18px; "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16" class="pin">
+        <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+      </svg></a>
+
+
+
+
+
+
+</div>
+
+    
+    <hr style="width: 7rem;background-color: grey;position: relative;top: -28.5rem;;left: 1.5rem;;">
+
+
+    <div class="lc">
+      <a href="">Accessibility /</a>
+      <a href="">Contact Us /</a>
+      <a href="">Jobs /</a>
+      <a href="">Campus Safety /</a>
+      <a href="">My UE/</a>
+      <a href="">Rules Docket/</a>
+      <a href="">Privacy/</a>
+      <a href="">Terms/</a>
+      <a href="">Newsletter/</a>
+    </div>
+<div id="end">© 2024 University of Education | Udaipur, Rajasthan</div>
+ </div>
+
+  </div>
+ 
+
+
+
+ 
+</body>
+</html>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+
+
+
+
+
+
+
+    </script>
+
+    <script>
+  $(document).ready(function () {
+    $("#btn3").click(function () {
+      $(".xyz").slideToggle(1000);
+    })
+
+  })
+
+  $(document).ready(function () {
+    $("#btn5").click(function () {
+      $(".pqr").toggle(1500);
+    })
+  })
+
+
+
+</script>
